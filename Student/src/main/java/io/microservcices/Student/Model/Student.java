@@ -2,45 +2,33 @@ package io.microservcices.Student.Model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Student {
     
 	@Id
 	private long id;
-	private String name;
-	private String enrollCourse;
+	private int courseId;
+	private String courseName;
 	private String email;
-	
-	
-	public Student() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-	public Student(long id, String name, String enrollCourse, String email) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.enrollCourse = enrollCourse;
-		this.email = email;
-	}
 	public long getId() {
 		return id;
 	}
 	public void setId(long id) {
 		this.id = id;
 	}
-	public String getName() {
-		return name;
+	public int getCourseId() {
+		return courseId;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setCourseId(int courseId) {
+		this.courseId = courseId;
 	}
-	public String getEnrollCourse() {
-		return enrollCourse;
+	public String getCourseName() {
+		return courseName;
 	}
-	public void setEnrollCourse(String enrollCourse) {
-		this.enrollCourse = enrollCourse;
+	public void setCourseName(String courseName) {
+		this.courseName = courseName;
 	}
 	public String getEmail() {
 		return email;
@@ -49,5 +37,7 @@ public class Student {
 		this.email = email;
 	}
 	
+	
+
 	
 }
