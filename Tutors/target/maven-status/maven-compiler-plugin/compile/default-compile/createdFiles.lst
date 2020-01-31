@@ -1,0 +1,4 @@
+io\microservices\Tutor\Model\Tutor.class
+io\microservices\Tutor\Repository\TutorRepository.class
+io\microservices\Tutor\Controller\TutorController.class
+io\microservices\Tutor\TutorsApplication.class
